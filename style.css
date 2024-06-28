@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.first{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+}
+nav button:hover, .but button:hover{
+    box-shadow: 10px 10px 10px 0px rgb(228, 228, 225);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+nav a{
+    font-size: 34px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+nav button{
+    padding: 17px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    background-color: rgb(243, 227, 124);
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+.text h1{
+    font-size: 100px;
+    font-weight: 900;
+}
+.text p{
+    font-size: 18px;
+    line-height: 35px;
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+}
+.but button{
+    padding: 25px 45px;
+    border-radius: 35px;
+    border: none;
+    background-color: rgb(243, 227, 124);
+    cursor: pointer;
+}
+.but span{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.but span:hover{
+    border-bottom: 5px solid black;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.icons .oo{
+    width: 34px;
+}
+.icons .rr{
+    width: 40px;
+}
+.icons .tt{
+    width: 49px;
+}
+.icons .mm{
+    width: 25px;
+}
+.anim{
+    opacity: 0;
+    transform: translatex(-70px);
+    animation: moveup 0.5s linear forwards;    
+}
+button.anim{
+    opacity: 0;
+    transform: translatex(50px);
+    animation: moveup 0.5s linear forwards;
+}
+h1.anim{
+    opacity: 0;
+    transform: translatey(50px);
+    animation: moveup 1s linear forwards;
+}
+p.anim{
+    opacity: 0;
+    transform: translatey(40px);
+    animation: moveup 1.5s linear forwards;
+    animation-delay: 0.5s;
+
+}
+.but button.anim{
+    opacity: 0;
+    transform: translatex(-70px);
+    animation: moveup 1.5s linear forwards;
+    animation-delay: 1.7s;
+}
+.but span.anim{
+    opacity: 0;
+    transform: translatex(70px);
+    animation: moveup 1.5s linear forwards;
+    animation-delay: 1.7s;
+}
+.icons#anim{
+    opacity: 0;
+    transform: translatey(70px);
+    animation: moveup 1.5s linear forwards;
+    animation-delay: 1.7s;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+}
+.second{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #E2DFD0;
+    align-items: center;
+}
+.template_list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
+}
+.template img{
+    width: 30rem;
+    /* overflow-clip-margin: content-box; */
+    overflow: clip;
+    transition: all 0.15s ease-out;
+}
+.template img:hover{
+    box-shadow: 10px 10px 10px 0px rgb(140, 140, 139);
+    transform: translateY(-15px);
+    border-radius: 50px;
+    transition: 1.1s;
+}
+@media (max-width:1129px) {
+    .template img{
+        width: 25rem;
+    }
+    .template_list{
+        padding: 20px;
+    }
+}
+@media (max-width:890px) {
+    .template img{
+        width: 35rem;
+    }
+}
+@media (max-width:768px) {
+    .template img{
+        width: 25rem;
+    }
+    .text h1{
+        font-size: 70px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .but button{
+        padding: 15px 25px;
+    }
+    .but span{
+        font-size: 15px;
+    }
+    nav button{
+        padding: 12px 15px;
+        font-size: 10px;
+    }
+}
+@media (max-width:445px) {
+    .template img{
+        width: 20rem;
+    }
+}
+@media (max-width:360px) {
+    .template img{
+        width: 15rem;
+    }
+}
+@media (max-width:561px) {
+    .text h1{
+        font-size: 50px;
+    }
+    .text p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .text p br{
+        display: none;
+    }
+    .but button{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .but span{
+        font-size: 10px;
+    }
+    nav button{
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+    .icons .oo{
+        width: 24px;
+    }
+    .icons .rr{
+        width: 30px;
+    }
+    .icons .tt{
+        width: 39px;
+    }
+    .icons .mm{
+        width: 15px;
+    }
+    .text {
+        padding: 20px;
+    }
+}
+@media (max-width:474px) {
+    .but button{
+        padding: 10px 15px;
+        font-size: 6px;
+    }
+    .but span{
+        font-size: 8px;
+    }
+    nav button{
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+    .text h1{
+        font-size: 50px;
+    }
+    nav a{
+        font-size: 24px;
+    }
+}
+.transparent{
+    height: 50vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 100px;
+    background-image: url(7-JulyJDS_6372BearLakeReflectionV2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.transparent h1{
+    font-size: 140px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    /* -webkit-text-stroke: 2px; */
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+
+}
+.transparent p{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+@media (max-width:691px) {
+    .transparent h1{
+        font-size: 75px;
+    }
+    .transparent p{
+        font-size: 10px;
+    }
+}
+footer{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    text-align: center;
+    line-height: 40px;
+}
+@media (max-width:425px) {
+    footer .footer img{
+        width: 10rem;
+    }
+    .footer p{
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}
